@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>сумматор</title>
+ </head>
+  <body>
+  <form>
+	<p>Введите число 1</p>
+	<input type="number" id="cifra" value="0.1"><br> <!-- поле ввода №1 -->
+	<p>Введите число 2</p>
+    <input type="number" id="chislo" value="0.2"><br> <!-- поле воода №2 -->
+	<input type="button" value="Сложить 2 два числа" onclick="addition();"><br> <!-- запуск скрипта -->
+</form>
+ сумма: <div id="if"></div> <!-- строка вывода значения -->
+ <script>
+function addition() {
+	var x = document.getElementById("cifra").value; //получение 1 числа
+	var y = document.getElementById("chislo").value; //получение 2 числа
+		var a = x*10000; //избавляемся от запятой
+		var b = y*10000;
+		var c = (a+b)/10000; //возвращаем запятую
+		document.getElementById("if").innerHTML = c; //выводим значение 
+}
+</script>
+  </body>
+</html>
