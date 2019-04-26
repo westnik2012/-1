@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Атрибут pattern</title>
+  <script>
+function addition() {
+	var x = document.getElementById("cifra").value;
+	var y = document.getElementById("chislo").value;
+		var a = x*10000;
+		var b = y*10000;
+		var c = (a+b)/10000;
+		document.getElementById("if").innerHTML = c;
+}
+</script>
+ </head>
+  <body>
+  <form>
+	<p>Введите число 1</p>
+	<input type="number" id="cifra" value="0.1"><br>
+	<p>Введите число 2</p>
+    <input type="number" id="chislo" value="0.2"><br>
+	<input type="button" value="Сложить 2 два числа" onclick="addition();"><br>
+</form>
+ сумма: <div id="if"></div>
+  </body>
+</html>
